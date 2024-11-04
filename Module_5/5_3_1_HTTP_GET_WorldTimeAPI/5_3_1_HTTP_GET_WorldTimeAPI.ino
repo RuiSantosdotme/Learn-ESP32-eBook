@@ -60,6 +60,8 @@ String getDateTime() {
           Serial.println(error.c_str());
           return "failed";
         }
+      } else {
+        return "failed";
       }
     } else {
       Serial.printf("GET request failed, error: %s\n", http.errorToString(httpCode).c_str());
