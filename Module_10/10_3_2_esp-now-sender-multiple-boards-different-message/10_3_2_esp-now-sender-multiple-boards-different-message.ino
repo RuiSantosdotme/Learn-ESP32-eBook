@@ -43,7 +43,7 @@ void setup() {
     return;
   }
 
-  esp_now_register_send_cb(OnDataSent);
+  esp_now_register_send_cb(esp_now_send_cb_t(OnDataSent));
 
   // register peer
   peerInfo.channel = 0;  
