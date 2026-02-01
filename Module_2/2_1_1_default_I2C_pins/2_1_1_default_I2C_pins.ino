@@ -10,10 +10,10 @@ void setup() {
 
   // Print out the default I2C pins
   Serial.print("Default I2C SCL pin: ");
-  Serial.println(SDA);
+  Serial.println(SCL);
   
   Serial.print("Default I2C SDA pin: ");
-  Serial.println(SCL);
+  Serial.println(SDA);
 }
 
 void loop() {
